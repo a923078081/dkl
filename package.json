@@ -64,6 +64,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "deve": "node scripts/development.js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
@@ -145,5 +146,6 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "homepage": "."
 }

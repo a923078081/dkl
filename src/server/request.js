@@ -1,6 +1,12 @@
 import axios from 'axios'
 import encrypt from '../ulits/setEncryptData'
-axios.defaults.baseURL='http://127.0.0.1:8000'
+if(process.env.NODE_ENV ==='development'){
+    axios.defaults.baseURL='http://127.0.0.1:8000'
+}
+else {
+    axios.defaults.baseURL='http://www.baidu.com'
+}
+
 axios.defaults.timeout = 20000;
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 axios.interceptors.request.use(config => {

@@ -3,6 +3,10 @@ import {connect} from 'react-redux'
 import upFile from '../../ulits/fileload'
 import '../../assets/css/user.css'
 import Tab from '../../components/user/tab'
+import One from '../../components/user/first'
+import Two from '../../components/user/second'
+import Three from '../../components/user/three'
+import Four from '../../components/user/four'
 class User  extends Component{
     constructor(...args) {
         super(...args);
@@ -24,10 +28,13 @@ class User  extends Component{
     render(){
         return (
             <div className='box'>
+                <One></One>
+                <Two></Two>
+                <Three></Three>
+                <Four></Four>
                 <Tab></Tab>
-                {/*<this.NumberList numbers={this.numbers} />,*/}
-                {/*<input type='button' onClick={this.getHttp.bind(this,{ab:'哈哈' , aa:'2', ac:'3' })} value='發送請求'/>*/}
-                {/*<input type='file' id='submit' onChange={this.getFile.bind(this)}/>*/}
+                <input type='button' onClick={this.getHttp.bind(this,{ab:'哈哈' , aa:'2', ac:'3' })} value='發送請求'/>
+                <input type='file' id='submit' onChange={this.getFile.bind(this)}/>
             </div>
         );
     }

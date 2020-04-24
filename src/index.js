@@ -8,6 +8,7 @@ import * as serviceWorker from './serviceWorker';
 import 'antd-mobile/dist/antd-mobile.css';
 import './assets/css/reset.css'
 import './assets/css/public.css'
+import './assets/css/icon.css'
 React.$axiosGet=HTTP_GET
 React.$axiosPost=HTTP_POST
 React.$axiosFile=HTTP_FILE

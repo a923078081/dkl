@@ -6,6 +6,7 @@
     top: 0;
     bottom: 0;
     overflow-x: hidden;
+    font-size:0.14rem;
 }
 .l{
     float: left;
